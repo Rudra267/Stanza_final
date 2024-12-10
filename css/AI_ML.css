@@ -1,0 +1,141 @@
+.button_Design{
+    padding: 40px 7%;
+    background-color: #fff;
+    
+}
+
+.button_Design > .text_buttonDesign_section1 > h2{ 
+    line-height: 32px;
+    padding-bottom: 30px;
+    color: #000;
+    margin: 0;
+    font-family: extra;
+}
+.button_Design > .text_buttonDesign_section1 > h2 > span{
+    color: #0047ff;
+}
+.button_Design > .text_buttonDesign_section1 > p{
+   
+    color: #000;
+    font-family:extra;
+}
+.button_Design > .text_buttonDesign_section1 > p > span{
+    color: #0047ff;
+}
+.buttonDesign_section1 > h1 >  span{
+    color: #0047ff;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column; */
+}
+.buttonDesign_section1_btns{
+    text-align: center;
+}
+.buttonDesign_section1 > h1{
+    font-family: extra;
+    font-size: 1.5em;
+    color: #000;
+}
+.buttonDesign_section1 > h1{
+    padding: 20px 0;
+    color:#000;
+}
+.buttonDesign_section1_btns{
+
+    /* padding: 20px 50px 0 70px; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* grid-row-gap: 20px; */
+    grid-gap: 25px;
+
+}
+
+@media (max-width:1280px){
+    .btn_Design{
+        width: 280px !important;
+        height: 90px !important;
+        font-size: 0.6em !important;
+        height: 65px !important;
+    }
+}
+
+@media (max-width:1070px){
+    .btn_Design{
+        width: 230px !important;
+        height: 90px !important;
+        font-size: 1em;
+    }
+    .buttonDesign_section1_btns{
+        padding: 20px 50px 0 0px;
+    }
+}
+@media (max-width:860px){
+    .buttonDesign_section1_btns{
+        grid-gap: 10px;
+    }
+}
+@media (max-width:750px){
+    .btn_Design{
+        width: 90vw !important;
+        height: 56px !important;
+        font-size: 1em;
+    }
+    .buttonDesign_section1_btns{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width:600px){
+    .button_Design {
+        padding: 40px 25px;}
+}
+.buttonDesign_section1_btns > h4{
+   
+    padding:0 30px;
+    margin: 0;
+}
+
+.btn_Design {
+    letter-spacing: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    font-family: GilB;
+    font-weight: 500;
+    width: 350px;
+    height: 80px;
+    border-radius: 50px;
+    color: #000;
+    background: transparent;
+    z-index: 1; /* Keep the content above the pseudo-element */
+    transition: all 0.2s ease;
+}
+
+.btn_Design::after {
+    content: "";
+    position: absolute;
+    inset: 0; /* Simplifies setting all sides to 0 */
+    border-radius: 50px;
+    padding: 2.5px; /* Width of the "border" effect */
+    background: linear-gradient(to left, rgb(132, 83, 210) 47px, rgb(0, 71, 255) 131.6px, rgb(0, 120, 194) 100%);
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0); /* Ensures the border gradient is clipped */
+    mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    z-index: -1; /* Ensures the pseudo-element is behind the button */
+}
+.btn_Design:hover{
+    background-color: #000;
+    color: #fff;
+}
+

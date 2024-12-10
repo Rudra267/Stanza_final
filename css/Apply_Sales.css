@@ -1,0 +1,255 @@
+
+.Apply_form{
+    width: 100%;
+    /* height: 100vh; */
+    background-color: #fff;
+}
+.header_Apply_form{
+    position: fixed;
+    margin-top: -2%;
+    width: 100%;
+    height: 20%;
+    background-color: #000;
+}
+
+/* Base styles */
+.Application_Form {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding:100px 0 0 0;
+}
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+.about-company > p{
+    font-family: extra;
+color: #000;
+}
+
+.apply-now-btn {
+    padding: 10px 20px;
+    background-color: #9875E4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.apply-now-btn:hover {
+    scale: 1.2;
+    color: #000;
+    background-color: transparent;
+}
+
+.Application_Form .container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.Application_Form header {
+    padding-top: 10px;
+    text-align: left;
+    border-bottom: 2px solid #9875E4;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.Application_Form h1 {
+    font-family: extra;
+    /* font-size: 2rem ; */
+    color: black;
+}
+
+.Application_Form .job-details p {
+    font-family: extra;
+    color: #000;
+    margin: 5px 0;
+    /* font-size: 1rem ; */
+}
+
+.Application_Form section {
+
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.Application_Form h2 {
+    font-family: extra;
+    /* font-size: 1.5rem; */
+    color: #9875E4;
+    margin-bottom: 10px;
+}
+
+.Application_Form ul {
+    list-style: none;
+    padding: 0;
+}
+
+.Application_Form ul li {
+    font-size: 1.1em;
+    font-family: extra;
+    margin-bottom: 10px;
+}
+
+.Application_Form .apply-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Application_Form .form-group label {
+    font-family: extra;
+    /* font-size: 1rem; */
+    margin-bottom: 5px;
+}
+
+.Application_Form .form-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.Application_Form .submit-btn {
+    /* font-family: GilB; */
+    padding: 10px 20px;
+    background-color: #9875E4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    width: fit-content;
+    align-self: flex-start;
+    transition: all 0.4s ease;
+    letter-spacing: 1px;
+}
+
+.Application_Form .submit-btn:hover {
+    scale: 1.2;
+    background-color: transparent;
+    color: #000;
+    /* border: 1.5px dashed #9875E4; */
+}
+
+.con_box ul li span{
+    font-family: GilB;
+    /* font-size: 1.2em; */
+}
+
+/* Style for the dropdown */
+select {
+    padding: 10px;
+    width: 100%;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+select:focus {
+    border-color: #9875E4;
+    outline: none;
+}
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .Application_Form  .container {
+        width: 90%;
+    }
+
+    .apply-now-btn {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+    /* .Application_Form   h1 {
+        font-size: 1.8rem;
+    }
+
+    .Application_Form   h2 {
+        font-size: 1.3rem;
+    }
+
+    .Application_Form   .job-details p {
+        font-size: 0.9rem;
+    }
+
+    .Application_Form   ul li {
+        font-size: 0.9rem;
+    } */
+
+    .Application_Form   .form-group input {
+        /* font-size: 0.9rem; */
+        padding: 8px;
+    }
+
+    .Application_Form   .submit-btn {
+        /* font-size: 0.9rem; */
+        padding: 8px 15px;
+    }
+    .Application_Form h1{
+        font-size: 24px;
+        line-height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .apply-now-btn {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+    /* .Application_Form   h1 {
+        font-size: 1.5rem;
+    }
+
+    
+
+    .Application_Form   h2 {
+        font-size: 1.2rem;
+    }
+
+    .Application_Form   .job-details p {
+        font-size: 0.8rem;
+    }
+
+    .Application_Form   ul li {
+        font-size: 0.8rem;
+    } */
+
+    .Application_Form  .form-group input {
+        /* font-size: 0.8rem; */
+        padding: 6px;
+    }
+
+    .Application_Form  .submit-btn {
+        /* font-size: 0.8rem; */
+        padding: 6px 10px;
+    }
+}
+
+@media (max-width:1040px){
+    .header_Apply_form{
+        display: none;
+    }
+    .Application_Form{
+        padding: 0 0 0 0 !important;
+    }
+}

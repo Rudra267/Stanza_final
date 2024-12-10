@@ -1,0 +1,28 @@
+.career_header_h2{
+    margin: 0;
+    background-color: #fff;
+    color: #282828;
+    font-family: extra;
+    padding: 100px 120px 0px 120px;
+    font-size: 1.4em;
+}
+
+@media (max-width:1000px) {
+    .career_header_h2 {
+    padding:100px 21px 0px 21px ;
+    }
+}
+
+@media (max-width:550px){
+    .career_header_h2{
+        padding:80px 21px 0px 21px ;
+        text-align: center;
+        font-size: 1em;
+    }
+    .target_CLM_text{
+        font-size: 1.5em !important;
+    }
+    .currentOpenings .card_content > .Text_careers{
+        font-size: 0.8em;
+    }
+}
