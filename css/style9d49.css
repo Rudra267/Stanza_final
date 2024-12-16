@@ -5462,6 +5462,22 @@ body.light-theme .creative_link {
     body.light-theme #about, #about2, .metaportal_fn_collectionpage, .metaportal_fn_comments {
         padding: 0px 0;
     }
+
+    
+    .carrier .carrier-right > h3{
+        font-size: 21px !important;
+    }
+
+    .carrier .carrier-right .lower> h6 {
+      font-size: 15px !important;
+    }
+
+    .carrier .carrier-right .lower> h6 > svg{
+        left: 20% !important;
+    }
+    .carrier .carrier-right > h5{
+        font-size: 15px !important;
+    }
 }
 
 
@@ -5924,15 +5940,7 @@ body.light-theme .fn_cs_shortabout .about_left {
         padding: 48px 50px 50px
     }
 
-    .carrier .carrier-right > h4 {
-        font-size: 4vw !important;
-    }
-    .carrier .carrier-right .lower> h6 {
-        font-size: 2.5vw !important;
-    }
-    .carrier .carrier-right .lower> h6 > svg {
-        left:35% !important;
-    }
+   
     
 }
 
@@ -5965,7 +5973,7 @@ body.light-theme .fn_cs_shortabout .about_left {
     } */
 
     .carrier .carrier-right .lower> h6 > svg {
-        left:61% !important
+        left:70% !important
     }
 
 
@@ -6644,12 +6652,6 @@ body.light-theme .fn_cs_shortabout .about_left {
     background-color: #f0f0f0;
 } */
 
-
-    
-     
-
-     
-    
     .new-span{
         background: var(--brandColour) !important;
             -webkit-background-clip: text !important;
@@ -7091,7 +7093,7 @@ body.light-theme .carrier .carrier-right .lower> h6 > svg{
     font-weight: 600;
     color: white;
     letter-spacing: -0.02em;
-    line-height: 40px;
+    /* line-height: 40px; */
     font-style: normal;
     font-size: 28px;
     padding-bottom: 8px;
@@ -7099,7 +7101,7 @@ body.light-theme .carrier .carrier-right .lower> h6 > svg{
   
   .card-description {
     font-weight: 600;
-    line-height: 32px;
+    /* line-height: 32px; */
     color: hsla(0, 0%, 100%, 0.5);
     font-size: 16px;
     max-width: 470px;
@@ -7328,13 +7330,7 @@ body.light-theme .carrier .carrier-right .lower> h6 > svg{
 
   @media (max-width:650px){
     .card_con {
-      
         height: 70vh;
-  }
-
-  .card-title{
-    font-size: 21px;
-   
   }
 }
 
@@ -7342,9 +7338,11 @@ body.light-theme .carrier .carrier-right .lower> h6 > svg{
     .card-description{
         font-size: 13px;
     }
-    .card_con-card{
-        padding: 25px;
+    
+    .card-description{
+        line-height: 15px;
     }
+   
 }
 
 @media (max-width:450px){
@@ -7369,8 +7367,11 @@ body.light-theme .carrier .carrier-right .lower> h6 > svg{
         line-height: 20px;
         font-size: 16px;
     }
-    .card-description{
-        line-height: 24px;
+    /* .card-description{
+        line-height: px;
+    } */
+    .card_con-card{
+        padding: 10px;
     }
 }
 
@@ -7400,3 +7401,14 @@ body.light-theme .carrier .carrier-right .lower> h6 > svg{
     padding-top: 10px;
 }
 
+@media (max-width:800px){
+    .card_con-card{
+        padding: 25px;
+    }
+    .card-title{
+        font-size: 17px;
+    }
+    .fn_cs_contact_info h3{
+        font-size: 18px;
+    }
+}
