@@ -114,8 +114,8 @@ body {
     padding-right: 25px;
     padding-bottom: 0px;
     padding-left: 0px;
-    width: 65px;
-    height: 40px;
+    width: 49px;
+    height: 25px;
   }
   
   .contact_us_green .social-media-links {
@@ -139,6 +139,7 @@ body {
     margin-right: 0px;
     margin-bottom: 15px;
     margin-left: 0px;
+    flex-wrap: wrap;
   }
 
 
@@ -304,6 +305,11 @@ body {
     .contact_us_green .responsive-container-block.container {
       justify-content: center;
     }
+
+     
+    .contact_us_green .workik-contact-bigbox {
+      display: block;
+    }
   
     .contact_us_green .text-blk.contactus-subhead {
       max-width: 90%;
@@ -334,10 +340,6 @@ body {
       margin-right: 0px;
       margin-bottom: 0px;
       margin-left: 0px;
-    }
-  
-    .contact_us_green .workik-contact-bigbox {
-      display: flex;
     }
   
     .contact_us_green .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-5.wk-ipadp-10 {
@@ -373,10 +375,7 @@ body {
       padding-bottom: 0px;
       padding-left: 20px;
     }
-  
-    .contact_us_green .workik-contact-bigbox {
-      display: block;
-    }
+ 
   
     .contact_us_green .text-blk.input-title {
       font-size: 16px;
