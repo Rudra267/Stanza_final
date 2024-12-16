@@ -7342,6 +7342,8 @@ body.light-theme .carrier .carrier-right .lower> h6 > svg{
     .card-description{
         line-height: 15px;
     }
+
+
    
 }
 
@@ -7353,6 +7355,10 @@ body.light-theme .carrier .carrier-right .lower> h6 > svg{
 
     .new-span{
         font-size: 47px !important;
+    }
+
+    #roadmap-contact > .container_box{
+        height: 61vh;
     }
 }
 
