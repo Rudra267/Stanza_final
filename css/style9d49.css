@@ -7101,7 +7101,7 @@ body.light-theme .carrier .carrier-right .lower> h6 > svg{
   
   .card-description {
     font-weight: 600;
-    /* line-height: 32px; */
+    line-height: 32px;
     color: hsla(0, 0%, 100%, 0.5);
     font-size: 16px;
     max-width: 470px;
@@ -7339,9 +7339,9 @@ body.light-theme .carrier .carrier-right .lower> h6 > svg{
         font-size: 13px;
     }
     
-    .card-description{
+    /* .card-description{
         line-height: 30px;
-    }
+    } */
 
 
    
