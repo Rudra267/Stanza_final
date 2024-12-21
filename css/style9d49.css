@@ -6942,7 +6942,7 @@ body.light-theme {
     font-family:font1bold;
     font-size: 1.6vw;
     text-transform: uppercase;
-    letter-spacing: 10px;
+    /* letter-spacing: 10px; */
   }
   .carrier .carrier-right > h3{
     /* background-color: red; */
