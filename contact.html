@@ -237,35 +237,35 @@ Have a question or ready to start your project? Contact us today, and let's crea
                         <p class="text-blk input-title">
                           FIRST NAME
                         </p>
-                        <input class="input" id="ijowk-6" name="FirstName">
+                        <input id="Fname" class="input" id="ijowk-6" name="FirstName">
                       </div>
                       <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
                         <p class="text-blk input-title">
                           LAST NAME
                         </p>
-                        <input class="input" id="indfi-4" name="Last Name">
+                        <input  id="Lname" class="input" id="indfi-4" name="Last Name">
                       </div>
                       <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
                         <p class="text-blk input-title">
                           EMAIL
                         </p>
-                        <input class="input" id="ipmgh-6" name="Email">
+                        <input id="email" class="input" id="ipmgh-6" name="Email">
                       </div>
                       <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
                         <p class="text-blk input-title">
                           PHONE NUMBER
                         </p>
-                        <input class="input" id="imgis-5" name="PhoneNumber">
+                        <input id="PhoneNumber" class="input" id="imgis-5" name="PhoneNumber">
                       </div>
                       <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i-6">
                         <p class="text-blk input-title">
                           WHAT DO YOU HAVE IN MIND
                         </p>
-                        <textarea class="textinput" id="i5vyy-6" placeholder="Please enter query..."></textarea>
+                        <textarea id="message" class="textinput" id="i5vyy-6" placeholder="Please enter query..."></textarea>
                       </div>
                     </div>
                     <div class="btn-wrapper">
-                      <button class="submit-btn metaportal_fn_button wallet_opener">
+                      <button onclick="sendEmail()" type="submit" id="submit" class="submit-btn metaportal_fn_button wallet_opener">
                         Submit
                       </button>
                     </div>
@@ -372,6 +372,7 @@ src="https://code.jquery.com/jquery-3.6.3.min.js"
 integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
 crossorigin="anonymous"
 ></script>
+
 <script src="https://kit.fontawesome.com/b4564537dc.js" crossorigin="anonymous"></script>
 
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script> -->
@@ -382,7 +383,9 @@ crossorigin="anonymous"
 <script type="text/javascript" src="js/plugins9d49.js?ver=10.0"></script>
 <!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js?ver=10.0"></script> <![endif]-->
 <script type="text/javascript" src="js/init9d49.js?ver=10.0"></script>
-
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script src="./js/email.js"></script>
 <!-- !Scripts -->
 
 <script>
@@ -397,7 +400,7 @@ crossorigin="anonymous"
     const randomIndex = Math.floor(Math.random() * icons.length);
     icons[randomIndex].classList.add("rotate-animation");
   }
-
+  
   // Set interval to randomly animate icons
   setInterval(animateRandomIcon, 2500); // Change 3000 to the desired interval in milliseconds
 });
