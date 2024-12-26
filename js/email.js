@@ -5,7 +5,17 @@ const phone = document.getElementById("PhoneNumber");
 const mess = document.getElementById("message");
 
 function sendEmail() {
-    const bodyMessage = `Full Name: ${Fname.value} ${Lname.value} Email: ${email.value} Phone Number: ${phone.value} Message: ${mess.value}`;
+    if(!Fname.value || !Lname.value || !email.value || !phone.value || !mess.value){
+        Swal.fire({
+            position: "center",
+            icon: "error",
+            title: `Try to fill out the empty box in the form`,
+            showConfirmButton: false,
+            timer: 1500
+          });
+    }
+    else{
+         const bodyMessage = `Full Name: ${Fname.value} ${Lname.value} Email: ${email.value} Phone Number: ${phone.value} Message: ${mess.value}`;
     console.log(bodyMessage)
     var param = {
         to_name:"Stanza Soft Customer Service Team",
@@ -23,8 +33,13 @@ const service_Id = "service_y8nbvic";
             document.getElementById("PhoneNumber").value = "",
             document.getElementById("message").value = ""
 
-            console.log(res);
-            alert("message is sent successfully");
+            Swal.fire({
+                position: "center",
+                icon: "success",
+                title: `We will reach to contact you`,
+                showConfirmButton: false,
+                timer: 1500
+              });
         }
 
         
@@ -32,6 +47,8 @@ const service_Id = "service_y8nbvic";
 
 
   
+    }
+   
 }
 
 
