@@ -1271,16 +1271,16 @@
 						<div class="input_list">
 							<ul>
 								<li>
-									<input id="name" type="text" placeholder="Your Name *" />
+									<input id="Fname" type="text" placeholder="Your FirstName *" />
 								</li>
 								<li>
-									<input id="email" type="text" placeholder="Your Email *" />
+									<input id="Lname" type="text" placeholder="Your Last Name *" />
 								</li>
 								<li>
-									<input id="tel" type="text" placeholder="Your Phone (optional)" />
+									<input id="PhoneNumber" type="text" placeholder="Your Phone (optional)" />
 								</li>
 								<li>
-									<input id="subject" type="text" placeholder="Topic (optional)" />
+									<input id="email" type="text" placeholder="Enter Your email" />
 								</li>
 								<li class="full">
 									<textarea id="message" placeholder="Your Message *"></textarea>
@@ -1293,12 +1293,11 @@
 										</span>
 										<p class="" id="fn_cs_contact_info_p">I’m okay with getting emails and having that activity tracked to improve my experience.</p>
 									</label>
-									<div class="mw300 ">
-										<a id="send_message" href="#" class="metaportal_fn_button full metaportal_fn_button_footer">
-											<span>Send Message</span>
-										</a>
-									</div>
-									
+									<div class="btn-wrapper">
+										<button onclick="sendEmail()" type="submit" id="submit" class="submit-btn metaportal_fn_button wallet_opener">
+										  Send Message
+										</button>
+									  </div>
 								</li>
 							</ul>
 						</div>
@@ -1378,6 +1377,18 @@
 <!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js?ver=10.0"></script> <![endif]-->
 <script type="text/javascript" src="js/init9d49.js?ver=10.0"></script>
 <!-- !Scripts -->
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "wHoJ4Ei5XycDcuQ3i",
+      });
+   })();
+</script>
+<script src="./js/email.js"></script>
 
 <script>
 
