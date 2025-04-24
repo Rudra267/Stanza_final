@@ -5302,6 +5302,9 @@ body.light-theme .creative_link {
     .heading01{
         font-size: 8vw !important;
     }
+    .carrier .carrier-right > h4{
+        font-size: 1em !important;
+    }
     .fn_cs_contact_form li{
         width: 100%;
     }
@@ -6085,7 +6088,7 @@ body.light-theme .fn_cs_shortabout .about_left {
 #faq {
     width: 100vw;
     background-color: #000000;
-    /* min-height: 100vh; */
+    min-height: 120vh;
 }
 
 .fn_cs_faq {

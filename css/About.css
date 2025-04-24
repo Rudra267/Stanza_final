@@ -527,6 +527,9 @@ margin: 0;
     .vision_img{
         display: none !important;
     }
+    .mission_img{
+        display: none !important;
+    }
     .vision_text > div > p {
         font-size: 0.7em;
     }

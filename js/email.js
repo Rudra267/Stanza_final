@@ -23,8 +23,8 @@ function sendEmail() {
         message:bodyMessage
     }
 
-const service_Id = "service_y8nbvic";
- const template_Id = "template_x4w50ef"
+const service_Id = "service_1ryxyiy";
+ const template_Id = "template_xbunbjs"
 
     emailjs.send(service_Id,template_Id,param).then((res) =>{
             document.getElementById("Fname").value = "",
